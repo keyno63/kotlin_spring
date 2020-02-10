@@ -1,4 +1,6 @@
 package com.who.kotlinspring.Service
 
-class SampleService {
+import com.who.kotlinspring.repository.SampleRepository
+
+class SampleService(sr: SampleRepository) {
 }
