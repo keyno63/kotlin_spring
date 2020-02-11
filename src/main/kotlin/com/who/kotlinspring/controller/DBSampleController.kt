@@ -12,4 +12,11 @@ class DBSampleController {
     fun test(): String {
         return "test"
     }
+
+    @GetMapping("/get")
+    fun get(): String {
+
+        throw NotImplementedError("Not Implememted now.")
+        return ""
+    }
 }
