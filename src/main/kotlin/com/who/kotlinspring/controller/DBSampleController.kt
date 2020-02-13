@@ -18,10 +18,9 @@ class DBSampleController {
     @GetMapping("/get")
     fun get(): String {
 
-        //throw HttpStatus404Exception("Not Implememted now.")
-        throw HttpStatus404Exception()
+        throw HttpStatus404Exception("Not Implememted now.")
     }
 }
 
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
-private class HttpStatus404Exception : RuntimeException()
+private class HttpStatus404Exception(value: String?) : RuntimeException()
