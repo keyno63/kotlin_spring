@@ -17,7 +17,6 @@ class DBSampleController {
 
     @GetMapping("/get")
     fun get(): String {
-
         throw HttpStatus404Exception("Not implemented now.")
     }
 }
