@@ -8,4 +8,8 @@ class SampleRepositoryImpl: SampleRepository {
         return ""
     }
 
+    fun post(x: String): String {
+        return ""
+    }
+
 }
