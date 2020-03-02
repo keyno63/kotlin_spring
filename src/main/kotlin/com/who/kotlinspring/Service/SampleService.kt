@@ -5,10 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
-class SampleService {
-
-    @Autowired
-    lateinit var sr: SampleRepository
+class SampleService(val sr: SampleRepository) {
 
     fun get(x: String): String {
         return sr.get(x)
