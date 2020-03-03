@@ -10,4 +10,8 @@ class SampleService(val sr: SampleRepository) {
     fun get(x: String): String {
         return sr.get(x)
     }
+
+    fun post(x: String): String {
+        return sr.post(x)
+    }
 }
