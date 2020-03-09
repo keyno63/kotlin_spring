@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
-class SampleServiceImpl(val sr: SampleRepository): SampleServiceBase {
+class SampleServiceImpl(val sr: SampleRepository): SampleService {
 
     fun get(x: String): String {
         return sr.get(x)
