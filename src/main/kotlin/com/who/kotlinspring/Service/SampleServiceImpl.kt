@@ -6,11 +6,11 @@ import org.springframework.stereotype.Service
 @Service
 class SampleServiceImpl(val sr: SampleRepository): SampleService {
 
-    fun get(x: String): String {
+    override fun get(x: String): String {
         return sr.get(x)
     }
 
-    fun post(x: String): String {
+    override fun post(x: String): String {
         return sr.post(x)
     }
 }

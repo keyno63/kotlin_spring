@@ -1,14 +1,12 @@
 package com.who.kotlinspring.controller
 
+import com.who.kotlinspring.Service.SampleService
 import org.springframework.http.HttpStatus
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.ResponseStatus
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/db")
-class DBSampleController {
+class DBSampleController(val sb: SampleService) {
 
     @GetMapping("/test")
     fun test(): String {
@@ -17,6 +15,12 @@ class DBSampleController {
 
     @GetMapping("/get")
     fun get(): String {
+        return sb.get("Hello Worlds.")
+        //throw HttpStatus404Exception("Not implemented now.")
+    }
+
+    @PostMapping("/post")
+    fun post(): String {
         throw HttpStatus404Exception("Not implemented now.")
     }
 }
