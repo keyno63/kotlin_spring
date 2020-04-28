@@ -16,7 +16,6 @@ class DBSampleController(val sb: SampleService) {
     @GetMapping("/get")
     fun get(): String {
         return sb.get("Hello Worlds.")
-        //throw HttpStatus404Exception("Not implemented now.")
     }
 
     @PostMapping("/post")
