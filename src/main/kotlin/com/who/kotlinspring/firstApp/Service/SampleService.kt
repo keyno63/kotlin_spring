@@ -1,4 +1,4 @@
-package com.who.kotlinspring.Service
+package com.who.kotlinspring.firstApp.Service
 
 interface SampleService {
     fun get(x: String): String

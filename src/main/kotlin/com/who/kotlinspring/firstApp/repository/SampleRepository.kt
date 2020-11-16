@@ -1,4 +1,4 @@
-package com.who.kotlinspring.repository
+package com.who.kotlinspring.firstApp.repository
 
 interface SampleRepository {
     fun get(x: String): String

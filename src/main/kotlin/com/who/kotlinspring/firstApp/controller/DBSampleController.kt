@@ -1,6 +1,6 @@
-package com.who.kotlinspring.controller
+package com.who.kotlinspring.firstApp.controller
 
-import com.who.kotlinspring.Service.SampleService
+import com.who.kotlinspring.firstApp.Service.SampleService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 

@@ -1,6 +1,6 @@
-package com.who.kotlinspring.Service
+package com.who.kotlinspring.firstApp.Service
 
-import com.who.kotlinspring.repository.SampleRepository
+import com.who.kotlinspring.firstApp.repository.SampleRepository
 import org.springframework.stereotype.Service
 
 @Service

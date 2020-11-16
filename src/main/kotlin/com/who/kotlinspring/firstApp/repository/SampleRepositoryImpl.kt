@@ -1,4 +1,4 @@
-package com.who.kotlinspring.repository
+package com.who.kotlinspring.firstApp.repository
 
 import org.springframework.stereotype.Repository
 
